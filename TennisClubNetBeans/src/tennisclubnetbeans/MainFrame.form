@@ -1,0 +1,2298 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.5" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="3"/>
+    <Property name="resizable" type="boolean" value="false"/>
+    <Property name="size" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+      <Dimension value="[1400, 800]"/>
+    </Property>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="mainTabbedPane" min="-2" pref="1236" max="-2" attributes="0"/>
+              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Component id="mainTabbedPane" alignment="0" max="32767" attributes="0"/>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Container class="javax.swing.JTabbedPane" name="mainTabbedPane">
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout"/>
+      <SubComponents>
+        <Container class="javax.swing.JPanel" name="clientTabPanel">
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+              <JTabbedPaneConstraints tabName="Client">
+                <Property name="tabTitle" type="java.lang.String" value="Client"/>
+              </JTabbedPaneConstraints>
+            </Constraint>
+          </Constraints>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="clientYourDataPanel" alignment="0" max="32767" attributes="0"/>
+                          <Group type="102" attributes="0">
+                              <Component id="clientSignInLabel" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="clientSignInTextField" min="-2" pref="55" max="-2" attributes="0"/>
+                              <EmptySpace pref="134" max="32767" attributes="0"/>
+                              <Component id="clientSignInButton" min="-2" pref="145" max="-2" attributes="0"/>
+                          </Group>
+                          <Component id="clientEnterDataPanel" max="32767" attributes="0"/>
+                          <Group type="102" alignment="1" attributes="0">
+                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                              <Component id="clientUpdateButton" min="-2" pref="145" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Component id="clientReservationsPanel" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="39" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="clientSignInTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="clientSignInButton" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Component id="clientSignInLabel" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <Component id="clientYourDataPanel" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="clientUpdateButton" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="11" max="-2" attributes="0"/>
+                              <Component id="clientEnterDataPanel" max="32767" attributes="0"/>
+                          </Group>
+                          <Component id="clientReservationsPanel" max="32767" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Component class="javax.swing.JLabel" name="clientSignInLabel">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Tahoma" size="18" style="0"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Sign in with your client ID:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="clientSignInTextField">
+            </Component>
+            <Container class="javax.swing.JPanel" name="clientReservationsPanel">
+              <Properties>
+                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                  <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+                    <TitledBorder title="Reservations"/>
+                  </Border>
+                </Property>
+              </Properties>
+
+              <Layout>
+                <DimensionLayout dim="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="cReservationScrollPane" pref="605" max="32767" attributes="0"/>
+                      <Group type="102" alignment="1" attributes="0">
+                          <EmptySpace max="32767" attributes="0"/>
+                          <Component id="cReservationShowButton" min="-2" pref="208" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="198" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+                <DimensionLayout dim="1">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="cReservationScrollPane" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="32767" attributes="0"/>
+                          <Component id="cReservationShowButton" min="-2" pref="50" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+              </Layout>
+              <SubComponents>
+                <Component class="javax.swing.JButton" name="cReservationShowButton">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Show your reservations"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cReservationShowButtonActionPerformed"/>
+                  </Events>
+                </Component>
+                <Container class="javax.swing.JScrollPane" name="cReservationScrollPane">
+                  <AuxValues>
+                    <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+                  </AuxValues>
+
+                  <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+                  <SubComponents>
+                    <Component class="javax.swing.JTable" name="cReservationTable">
+                      <Properties>
+                        <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
+                          <Table columnCount="4" rowCount="4">
+                            <Column editable="true" title="Title 1" type="java.lang.Object"/>
+                            <Column editable="true" title="Title 2" type="java.lang.Object"/>
+                            <Column editable="true" title="Title 3" type="java.lang.Object"/>
+                            <Column editable="true" title="Title 4" type="java.lang.Object"/>
+                          </Table>
+                        </Property>
+                      </Properties>
+                    </Component>
+                  </SubComponents>
+                </Container>
+              </SubComponents>
+            </Container>
+            <Container class="javax.swing.JPanel" name="clientYourDataPanel">
+              <Properties>
+                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                  <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+                    <TitledBorder title="Your Data"/>
+                  </Border>
+                </Property>
+              </Properties>
+
+              <Layout>
+                <DimensionLayout dim="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                      <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="1" attributes="0">
+                              <Component id="clientYourDataScroll" pref="532" max="32767" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+                <DimensionLayout dim="1">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <EmptySpace min="0" pref="120" max="32767" attributes="0"/>
+                      <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="clientYourDataScroll" min="-2" pref="94" max="-2" attributes="0"/>
+                              <EmptySpace max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+              </Layout>
+              <SubComponents>
+                <Container class="javax.swing.JScrollPane" name="clientYourDataScroll">
+                  <AuxValues>
+                    <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+                  </AuxValues>
+
+                  <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+                  <SubComponents>
+                    <Component class="javax.swing.JTable" name="clientTable">
+                      <Properties>
+                        <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
+                          <Table columnCount="4" rowCount="0">
+                            <Column editable="false" title="Title 1" type="java.lang.Object"/>
+                            <Column editable="false" title="Title 2" type="java.lang.Object"/>
+                            <Column editable="false" title="Title 3" type="java.lang.Object"/>
+                            <Column editable="false" title="Title 4" type="java.lang.Object"/>
+                          </Table>
+                        </Property>
+                        <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
+                          <TableColumnModel selectionModel="0">
+                            <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                              <Title/>
+                              <Editor/>
+                              <Renderer/>
+                            </Column>
+                            <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                              <Title/>
+                              <Editor/>
+                              <Renderer/>
+                            </Column>
+                            <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                              <Title/>
+                              <Editor/>
+                              <Renderer/>
+                            </Column>
+                            <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                              <Title/>
+                              <Editor/>
+                              <Renderer/>
+                            </Column>
+                          </TableColumnModel>
+                        </Property>
+                        <Property name="editingColumn" type="int" value="0"/>
+                        <Property name="editingRow" type="int" value="0"/>
+                        <Property name="tableHeader" type="javax.swing.table.JTableHeader" editor="org.netbeans.modules.form.editors2.JTableHeaderEditor">
+                          <TableHeader reorderingAllowed="true" resizingAllowed="true"/>
+                        </Property>
+                      </Properties>
+                    </Component>
+                  </SubComponents>
+                </Container>
+              </SubComponents>
+            </Container>
+            <Container class="javax.swing.JPanel" name="clientEnterDataPanel">
+              <Properties>
+                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                  <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+                    <TitledBorder title="Enter your data"/>
+                  </Border>
+                </Property>
+              </Properties>
+
+              <Layout>
+                <DimensionLayout dim="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" attributes="0">
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="cEterSecNameLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="cEnterNameLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="cEnterSurnameLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="cEnterSecNameTExtField" alignment="0" min="-2" pref="150" max="-2" attributes="0"/>
+                                      <Component id="cEnterNameTextFrame" alignment="0" min="-2" pref="150" max="-2" attributes="0"/>
+                                      <Component id="cEnterSurnameTextField" alignment="0" min="-2" pref="150" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <Component id="cEnterEmailLabel" min="-2" max="-2" attributes="0"/>
+                              <Group type="102" attributes="0">
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="cEnterPhoneLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="cEnterBuildingNumberLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="cEnterPostLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="cEnterStreetLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="cEnterCityLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Component id="cEnterEmailTextField" min="-2" pref="150" max="-2" attributes="0"/>
+                                          <EmptySpace pref="188" max="32767" attributes="0"/>
+                                          <Component id="cEnterConfirmButton" min="-2" pref="117" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Group type="102" attributes="0">
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Component id="cEnterCityTextField" min="-2" pref="150" max="-2" attributes="0"/>
+                                              <Component id="cEnterPostTextField" alignment="0" min="-2" pref="150" max="-2" attributes="0"/>
+                                              <Component id="cEnterPhoneTextField" min="-2" pref="150" max="-2" attributes="0"/>
+                                              <Component id="cEnterStreetTextField" alignment="0" min="-2" pref="150" max="-2" attributes="0"/>
+                                              <Group type="102" alignment="0" attributes="0">
+                                                  <Component id="cEnterBuildingNumberTextField" min="-2" pref="50" max="-2" attributes="0"/>
+                                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                                  <Component id="cEnterFlatLabel" min="-2" max="-2" attributes="0"/>
+                                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                                  <Component id="cEnterFlatTextField" min="-2" pref="50" max="-2" attributes="0"/>
+                                              </Group>
+                                          </Group>
+                                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                              </Group>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+                <DimensionLayout dim="1">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="1" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="cEnterNameLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="cEnterNameTextFrame" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="cEterSecNameLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="cEnterSecNameTExtField" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="cEnterSurnameLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="cEnterSurnameTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="cEnterCityLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="cEnterCityTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="cEnterStreetLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="cEnterStreetTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="cEnterBuildingNumberLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="cEnterFlatTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="cEnterFlatLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="cEnterBuildingNumberTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="cEnterPostLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="cEnterPostTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="cEnterPhoneLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="cEnterPhoneTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="cEnterEmailLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="cEnterEmailTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="32767" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="1" attributes="0">
+                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                          <Component id="cEnterConfirmButton" min="-2" pref="54" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+              </Layout>
+              <SubComponents>
+                <Component class="javax.swing.JLabel" name="cEnterNameLabel">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Name:"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="cEnterNameTextFrame">
+                </Component>
+                <Component class="javax.swing.JLabel" name="cEterSecNameLabel">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Sec. Name:"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="cEnterSecNameTExtField">
+                </Component>
+                <Component class="javax.swing.JLabel" name="cEnterSurnameLabel">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Surname:"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="cEnterSurnameTextField">
+                </Component>
+                <Component class="javax.swing.JLabel" name="cEnterCityLabel">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="City:"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="cEnterCityTextField">
+                </Component>
+                <Component class="javax.swing.JLabel" name="cEnterStreetLabel">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Street:"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="cEnterStreetTextField">
+                </Component>
+                <Component class="javax.swing.JLabel" name="cEnterBuildingNumberLabel">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Building:"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="cEnterFlatTextField">
+                </Component>
+                <Component class="javax.swing.JLabel" name="cEnterPostLabel">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Post:"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="cEnterPostTextField">
+                </Component>
+                <Component class="javax.swing.JLabel" name="cEnterPhoneLabel">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Phone:"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="cEnterPhoneTextField">
+                </Component>
+                <Component class="javax.swing.JLabel" name="cEnterEmailLabel">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Email:"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="cEnterEmailTextField">
+                </Component>
+                <Component class="javax.swing.JButton" name="cEnterConfirmButton">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Confirm"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cEnterConfirmButtonActionPerformed"/>
+                  </Events>
+                </Component>
+                <Component class="javax.swing.JLabel" name="cEnterFlatLabel">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Flat:"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="cEnterBuildingNumberTextField">
+                </Component>
+              </SubComponents>
+            </Container>
+            <Component class="javax.swing.JButton" name="clientUpdateButton">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Update your data"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="clientUpdateButtonActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JButton" name="clientSignInButton">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Log In"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="clientSignInButtonActionPerformed"/>
+              </Events>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Container class="javax.swing.JPanel" name="departmentTabPanel">
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+              <JTabbedPaneConstraints tabName="Departments">
+                <Property name="tabTitle" type="java.lang.String" value="Departments"/>
+              </JTabbedPaneConstraints>
+            </Constraint>
+          </Constraints>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="1" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="1" attributes="0">
+                              <EmptySpace max="32767" attributes="0"/>
+                              <Component id="departmentsAddButton" min="-2" pref="165" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="departmentsUpdateButton" min="-2" pref="165" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="departmentsRemoveButton" min="-2" pref="165" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="1" attributes="0">
+                                  <Component id="departmentsSearchButton" min="-2" pref="165" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="departmentsRecordPanel" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="departmentsSearchPanel" alignment="0" min="-2" pref="865" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <EmptySpace pref="20" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <Component id="departmentsSeparator" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Component id="departmentsAddPanel" min="-2" pref="320" max="-2" attributes="0"/>
+                      <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="departmentsSeparator" alignment="1" max="32767" attributes="0"/>
+                  <Group type="102" attributes="0">
+                      <Component id="departmentsSearchPanel" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="departmentsSearchButton" min="-2" pref="43" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="departmentsRecordPanel" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="departmentsRemoveButton" alignment="3" min="-2" pref="43" max="-2" attributes="0"/>
+                          <Component id="departmentsAddButton" alignment="3" min="-2" pref="43" max="-2" attributes="0"/>
+                          <Component id="departmentsUpdateButton" alignment="3" min="-2" pref="43" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace pref="51" max="32767" attributes="0"/>
+                  </Group>
+                  <Component id="departmentsAddPanel" alignment="0" pref="639" max="32767" attributes="0"/>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Component class="javax.swing.JButton" name="departmentsRemoveButton">
+              <Properties>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/images/remove.png"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Remove"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="departmentsRemoveButtonActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JButton" name="departmentsUpdateButton">
+              <Properties>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/images/update.png"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Update"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="departmentsUpdateButtonActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JButton" name="departmentsAddButton">
+              <Properties>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/images/add.png"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Add"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="departmentsAddButtonActionPerformed"/>
+              </Events>
+            </Component>
+            <Container class="javax.swing.JPanel" name="departmentsRecordPanel">
+              <Properties>
+                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                  <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+                    <TitledBorder title="Records">
+                      <Color PropertyName="color" blue="99" green="99" red="99" type="rgb"/>
+                    </TitledBorder>
+                  </Border>
+                </Property>
+              </Properties>
+
+              <Layout>
+                <DimensionLayout dim="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="departmentsTableScroll" alignment="0" pref="853" max="32767" attributes="0"/>
+                  </Group>
+                </DimensionLayout>
+                <DimensionLayout dim="1">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="departmentsTableScroll" alignment="0" pref="286" max="32767" attributes="0"/>
+                  </Group>
+                </DimensionLayout>
+              </Layout>
+              <SubComponents>
+                <Container class="javax.swing.JScrollPane" name="departmentsTableScroll">
+                  <AuxValues>
+                    <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+                  </AuxValues>
+
+                  <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+                  <SubComponents>
+                    <Component class="javax.swing.JTable" name="departmentsTable">
+                      <Properties>
+                        <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
+                          <Table columnCount="4" rowCount="0">
+                            <Column editable="true" title="Title 1" type="java.lang.Object"/>
+                            <Column editable="true" title="Title 2" type="java.lang.Object"/>
+                            <Column editable="true" title="Title 3" type="java.lang.Object"/>
+                            <Column editable="true" title="Title 4" type="java.lang.Object"/>
+                          </Table>
+                        </Property>
+                        <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
+                          <TableColumnModel selectionModel="0">
+                            <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                              <Title/>
+                              <Editor/>
+                              <Renderer/>
+                            </Column>
+                            <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                              <Title/>
+                              <Editor/>
+                              <Renderer/>
+                            </Column>
+                            <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                              <Title/>
+                              <Editor/>
+                              <Renderer/>
+                            </Column>
+                            <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                              <Title/>
+                              <Editor/>
+                              <Renderer/>
+                            </Column>
+                          </TableColumnModel>
+                        </Property>
+                        <Property name="tableHeader" type="javax.swing.table.JTableHeader" editor="org.netbeans.modules.form.editors2.JTableHeaderEditor">
+                          <TableHeader reorderingAllowed="true" resizingAllowed="true"/>
+                        </Property>
+                      </Properties>
+                    </Component>
+                  </SubComponents>
+                </Container>
+              </SubComponents>
+            </Container>
+            <Component class="javax.swing.JButton" name="departmentsSearchButton">
+              <Properties>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/images/search.png"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Search"/>
+                <Property name="opaque" type="boolean" value="false"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="departmentsSearchButtonActionPerformed"/>
+              </Events>
+            </Component>
+            <Container class="javax.swing.JPanel" name="departmentsSearchPanel">
+              <Properties>
+                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                  <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+                    <TitledBorder title="Search">
+                      <Color PropertyName="color" blue="99" green="99" red="99" type="rgb"/>
+                    </TitledBorder>
+                  </Border>
+                </Property>
+                <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                  <Dimension value="[866, 170]"/>
+                </Property>
+              </Properties>
+
+              <Layout>
+                <DimensionLayout dim="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                      <Group type="102" attributes="0">
+                                          <Component id="dSearchCityLabel" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                                          <Component id="dSearchCityTextField" min="-2" pref="150" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Group type="102" attributes="0">
+                                          <Component id="dSearchIDLabel" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="32767" attributes="0"/>
+                                          <Component id="dSearchIDTextField" min="-2" pref="150" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="dSearchNameLabel" min="-2" max="-2" attributes="0"/>
+                                      <Component id="dSearchStreetLabel" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Component id="dSearchPostLabel" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
+                                  <Component id="dSearchPostTextField" min="-2" pref="150" max="-2" attributes="0"/>
+                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                  <Component id="dSearchPhoneLabel" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                              <Component id="dSearchNameTextField" alignment="1" pref="150" max="32767" attributes="0"/>
+                              <Component id="dSearchStreetTextField" alignment="1" max="32767" attributes="0"/>
+                              <Component id="dSearchPhoneTextField" max="32767" attributes="0"/>
+                          </Group>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Component id="dSearchBuildingNumberLabel" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="dSearchBuildingNumberTextField" min="-2" pref="150" max="-2" attributes="0"/>
+                          <EmptySpace min="0" pref="236" max="32767" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+                <DimensionLayout dim="1">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="dSearchIDLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="dSearchIDTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="dSearchNameLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="dSearchNameTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="dSearchCityLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="dSearchCityTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="dSearchStreetLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="dSearchStreetTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="dSearchBuildingNumberLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="dSearchBuildingNumberTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="dSearchPostLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="dSearchPostTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="dSearchPhoneLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="dSearchPhoneTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace pref="43" max="32767" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+              </Layout>
+              <SubComponents>
+                <Component class="javax.swing.JLabel" name="dSearchIDLabel">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="ID:"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="dSearchNameLabel">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Name:"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="dSearchCityLabel">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="City:"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="dSearchIDTextField">
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="dSearchIDTextFieldActionPerformed"/>
+                  </Events>
+                </Component>
+                <Component class="javax.swing.JTextField" name="dSearchNameTextField">
+                </Component>
+                <Component class="javax.swing.JTextField" name="dSearchCityTextField">
+                </Component>
+                <Component class="javax.swing.JLabel" name="dSearchStreetLabel">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Street:"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="dSearchStreetTextField">
+                </Component>
+                <Component class="javax.swing.JLabel" name="dSearchBuildingNumberLabel">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Building:"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="dSearchBuildingNumberTextField">
+                </Component>
+                <Component class="javax.swing.JLabel" name="dSearchPostLabel">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Post:"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="dSearchPostTextField">
+                </Component>
+                <Component class="javax.swing.JLabel" name="dSearchPhoneLabel">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Phone:"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="dSearchPhoneTextField">
+                </Component>
+              </SubComponents>
+            </Container>
+            <Component class="javax.swing.JSeparator" name="departmentsSeparator">
+              <Properties>
+                <Property name="orientation" type="int" value="1"/>
+              </Properties>
+            </Component>
+            <Container class="javax.swing.JPanel" name="departmentsAddPanel">
+              <Properties>
+                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                  <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+                    <TitledBorder title="Add / Update">
+                      <Color PropertyName="color" blue="99" green="99" red="99" type="rgb"/>
+                    </TitledBorder>
+                  </Border>
+                </Property>
+                <Property name="enabled" type="boolean" value="false"/>
+                <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                  <Dimension value="[492, 25]"/>
+                </Property>
+              </Properties>
+
+              <Layout>
+                <DimensionLayout dim="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" alignment="1" attributes="0">
+                                  <EmptySpace pref="131" max="32767" attributes="0"/>
+                                  <Component id="departmentsConfirmButton" min="-2" pref="165" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" attributes="0">
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="dAddPhoneLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="dAddStreetLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="dAddNameLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="dAddIDLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="dAddCityLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="dAddBuildingNumberLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="dAddPostLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                      <Component id="dAddPostTextField" alignment="0" pref="150" max="32767" attributes="0"/>
+                                      <Component id="dAddPhoneTextField" alignment="0" pref="150" max="32767" attributes="0"/>
+                                      <Component id="dAddIDTextField" alignment="0" pref="150" max="32767" attributes="0"/>
+                                      <Component id="dAddNameTextField" alignment="0" pref="150" max="32767" attributes="0"/>
+                                      <Component id="dAddCityTextField" alignment="0" pref="150" max="32767" attributes="0"/>
+                                      <Component id="dAddStreetTextField" alignment="0" pref="150" max="32767" attributes="0"/>
+                                      <Component id="dAddBuildingNumberTextField" alignment="0" pref="150" max="32767" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+                <DimensionLayout dim="1">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="1" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="dAddIDLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="dAddIDTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="dAddNameLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="dAddNameTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="dAddCityLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="dAddCityTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="dAddStreetLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="dAddStreetTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="dAddBuildingNumberLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="dAddBuildingNumberTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="dAddPostLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="dAddPostTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="dAddPhoneLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="dAddPhoneTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="32767" attributes="0"/>
+                          <Component id="departmentsConfirmButton" min="-2" pref="43" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+              </Layout>
+              <SubComponents>
+                <Component class="javax.swing.JButton" name="departmentsConfirmButton">
+                  <Properties>
+                    <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                      <Image iconType="3" name="/images/confirm.png"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="Confirm"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="departmentsConfirmButtonActionPerformed"/>
+                  </Events>
+                </Component>
+                <Component class="javax.swing.JTextField" name="dAddIDTextField">
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="dAddIDTextFieldActionPerformed"/>
+                  </Events>
+                </Component>
+                <Component class="javax.swing.JLabel" name="dAddIDLabel">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="ID:"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="dAddCityLabel">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="City:"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="dAddCityTextField">
+                </Component>
+                <Component class="javax.swing.JLabel" name="dAddPostLabel">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Post:"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="dAddPostTextField">
+                </Component>
+                <Component class="javax.swing.JTextField" name="dAddNameTextField">
+                </Component>
+                <Component class="javax.swing.JLabel" name="dAddNameLabel">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Name:"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="dAddStreetLabel">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Street:"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="dAddStreetTextField">
+                </Component>
+                <Component class="javax.swing.JLabel" name="dAddBuildingNumberLabel">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Building:"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="dAddBuildingNumberTextField">
+                </Component>
+                <Component class="javax.swing.JTextField" name="dAddPhoneTextField">
+                </Component>
+                <Component class="javax.swing.JLabel" name="dAddPhoneLabel">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Phone:"/>
+                  </Properties>
+                </Component>
+              </SubComponents>
+            </Container>
+          </SubComponents>
+        </Container>
+        <Container class="javax.swing.JPanel" name="workersTabPanel">
+          <Properties>
+            <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[1231, 613]"/>
+            </Property>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+              <JTabbedPaneConstraints tabName="Workers">
+                <Property name="tabTitle" type="java.lang.String" value="Workers"/>
+              </JTabbedPaneConstraints>
+            </Constraint>
+          </Constraints>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="1" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="workersSearchPanel" alignment="0" pref="865" max="32767" attributes="0"/>
+                          <Component id="workersRecordPanel" alignment="1" max="32767" attributes="0"/>
+                          <Group type="102" alignment="1" attributes="0">
+                              <EmptySpace min="0" pref="356" max="32767" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="workersSearchButton" alignment="1" min="-2" pref="165" max="-2" attributes="0"/>
+                                  <Group type="102" alignment="1" attributes="0">
+                                      <Component id="workersAddButton" min="-2" pref="165" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="workersUpdateButton" min="-2" pref="165" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="workersRemoveButton" min="-2" pref="165" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                          </Group>
+                      </Group>
+                      <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
+                      <Component id="workersSeparator" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Component id="workersAddPanel" min="-2" pref="320" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="172" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="workersAddPanel" alignment="1" pref="639" max="32767" attributes="0"/>
+                  <Component id="workersSeparator" alignment="1" max="32767" attributes="0"/>
+                  <Group type="102" alignment="0" attributes="0">
+                      <Component id="workersSearchPanel" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="workersSearchButton" min="-2" pref="43" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="workersRecordPanel" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="workersRemoveButton" alignment="3" min="-2" pref="43" max="-2" attributes="0"/>
+                          <Component id="workersAddButton" alignment="3" min="-2" pref="43" max="-2" attributes="0"/>
+                          <Component id="workersUpdateButton" alignment="3" min="-2" pref="43" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace pref="51" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Container class="javax.swing.JPanel" name="workersAddPanel">
+              <Properties>
+                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                  <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+                    <TitledBorder title="Add / Update">
+                      <Color PropertyName="color" blue="99" green="99" red="99" type="rgb"/>
+                    </TitledBorder>
+                  </Border>
+                </Property>
+                <Property name="enabled" type="boolean" value="false"/>
+                <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                  <Dimension value="[492, 25]"/>
+                </Property>
+              </Properties>
+
+              <Layout>
+                <DimensionLayout dim="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <EmptySpace max="32767" attributes="0"/>
+                          <Component id="workersConfirmButton" min="-2" pref="165" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="wAddBankLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="wAddPhoneLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="wAddBuildingNumberLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="wAddPostLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="wAddStreetLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="wAddCityLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="wAddSecNameLabel" min="-2" max="-2" attributes="0"/>
+                              <Component id="wAddNameLabel" min="-2" max="-2" attributes="0"/>
+                              <Component id="wAddIDLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="wAddBirthDateLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="wAddSurnameLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="wAddEmailLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="wAddDepartmentLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="wAddProfessionLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="wAddBankTextField" max="32767" attributes="0"/>
+                              <Group type="102" attributes="0">
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="wAddProfessionComboBox" min="-2" max="-2" attributes="0"/>
+                                      <Component id="wAddDepartmentComboBox" min="-2" max="-2" attributes="0"/>
+                                      <Component id="wAddEmailTextField" min="-2" pref="150" max="-2" attributes="0"/>
+                                      <Component id="wAddPhoneTextField" alignment="0" min="-2" pref="150" max="-2" attributes="0"/>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <EmptySpace min="-2" pref="2" max="-2" attributes="0"/>
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Group type="102" attributes="0">
+                                                  <Component id="wAddBuildingNumberTextField" min="-2" pref="50" max="-2" attributes="0"/>
+                                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                                  <Component id="wAddFlatLabel" min="-2" max="-2" attributes="0"/>
+                                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                                  <Component id="wAddFlatTextField" min="-2" pref="50" max="-2" attributes="0"/>
+                                              </Group>
+                                              <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                                                  <Component id="wAddPostTextField" alignment="1" min="-2" pref="150" max="-2" attributes="0"/>
+                                                  <Component id="wAddStreetTextField" alignment="1" min="-2" pref="150" max="-2" attributes="0"/>
+                                                  <Component id="wAddCityTextField" alignment="1" min="-2" pref="150" max="-2" attributes="0"/>
+                                                  <Group type="103" alignment="1" groupAlignment="0" attributes="0">
+                                                      <Component id="wAddIDTextField" min="-2" pref="150" max="-2" attributes="0"/>
+                                                      <Component id="wAddSecNameTextField" min="-2" pref="150" max="-2" attributes="0"/>
+                                                      <Component id="wAddNameTextField" min="-2" pref="150" max="-2" attributes="0"/>
+                                                      <Component id="wAddSurnameTextField" alignment="0" min="-2" pref="150" max="-2" attributes="0"/>
+                                                      <Component id="wAddBirthDateTextField" alignment="0" min="-2" pref="150" max="-2" attributes="0"/>
+                                                  </Group>
+                                              </Group>
+                                          </Group>
+                                      </Group>
+                                  </Group>
+                                  <EmptySpace min="0" pref="57" max="32767" attributes="0"/>
+                              </Group>
+                          </Group>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+                <DimensionLayout dim="1">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="1" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="wAddIDLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="wAddIDTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="wAddNameLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="wAddNameTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="wAddSecNameLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="wAddSecNameTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="wAddSurnameLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="wAddSurnameTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="wAddBirthDateLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="wAddBirthDateTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="wAddCityLabel" min="-2" max="-2" attributes="0"/>
+                              <Component id="wAddCityTextField" alignment="0" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="wAddStreetLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="wAddStreetTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="103" alignment="0" groupAlignment="3" attributes="0">
+                                  <Component id="wAddFlatLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="wAddFlatTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="wAddBuildingNumberLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="wAddBuildingNumberTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="wAddPostLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="wAddPostTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="wAddPhoneLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="wAddPhoneTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="wAddBankLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="wAddBankTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="wAddEmailLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="wAddEmailTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="wAddDepartmentLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="wAddDepartmentComboBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace pref="11" max="32767" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="wAddProfessionLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="wAddProfessionComboBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="workersConfirmButton" min="-2" pref="43" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+              </Layout>
+              <SubComponents>
+                <Component class="javax.swing.JButton" name="workersConfirmButton">
+                  <Properties>
+                    <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                      <Image iconType="3" name="/images/confirm.png"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="Confirm"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="workersConfirmButtonActionPerformed"/>
+                  </Events>
+                </Component>
+                <Component class="javax.swing.JTextField" name="wAddIDTextField">
+                </Component>
+                <Component class="javax.swing.JLabel" name="wAddIDLabel">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="ID:"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="wAddNameLabel">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Name:"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="wAddNameTextField">
+                </Component>
+                <Component class="javax.swing.JLabel" name="wAddSurnameLabel">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Surname:"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="wAddSurnameTextField">
+                </Component>
+                <Component class="javax.swing.JLabel" name="wAddSecNameLabel">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Sec. Name:"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="wAddSecNameTextField">
+                </Component>
+                <Component class="javax.swing.JLabel" name="wAddBirthDateLabel">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Birth date:"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="wAddCityLabel">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="City:"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="wAddCityTextField">
+                </Component>
+                <Component class="javax.swing.JTextField" name="wAddStreetTextField">
+                </Component>
+                <Component class="javax.swing.JLabel" name="wAddStreetLabel">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Street:"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="wAddBuildingNumberLabel">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Building:"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="wAddBuildingNumberTextField">
+                </Component>
+                <Component class="javax.swing.JLabel" name="wAddPostLabel">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Post:"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="wAddPostTextField">
+                </Component>
+                <Component class="javax.swing.JLabel" name="wAddPhoneLabel">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Phone:"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="wAddPhoneTextField">
+                </Component>
+                <Component class="javax.swing.JLabel" name="wAddBankLabel">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Bank Account:"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="wAddBankTextField">
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="wAddBankTextFieldActionPerformed"/>
+                  </Events>
+                </Component>
+                <Component class="javax.swing.JLabel" name="wAddEmailLabel">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Email:"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="wAddEmailTextField">
+                </Component>
+                <Component class="javax.swing.JLabel" name="wAddDepartmentLabel">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Department:"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JComboBox" name="wAddDepartmentComboBox">
+                  <Properties>
+                    <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+                      <StringArray count="4">
+                        <StringItem index="0" value="Item 1"/>
+                        <StringItem index="1" value="Item 2"/>
+                        <StringItem index="2" value="Item 3"/>
+                        <StringItem index="3" value="Item 4"/>
+                      </StringArray>
+                    </Property>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JLabel" name="wAddProfessionLabel">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Profession:"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JComboBox" name="wAddProfessionComboBox">
+                  <Properties>
+                    <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+                      <StringArray count="4">
+                        <StringItem index="0" value="Item 1"/>
+                        <StringItem index="1" value="Item 2"/>
+                        <StringItem index="2" value="Item 3"/>
+                        <StringItem index="3" value="Item 4"/>
+                      </StringArray>
+                    </Property>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JLabel" name="wAddFlatLabel">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Flat:"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="wAddFlatTextField">
+                </Component>
+                <Component class="javax.swing.JTextField" name="wAddBirthDateTextField">
+                </Component>
+              </SubComponents>
+            </Container>
+            <Component class="javax.swing.JSeparator" name="workersSeparator">
+              <Properties>
+                <Property name="orientation" type="int" value="1"/>
+              </Properties>
+            </Component>
+            <Container class="javax.swing.JPanel" name="workersSearchPanel">
+              <Properties>
+                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                  <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+                    <TitledBorder title="Search">
+                      <Color PropertyName="color" blue="99" green="99" red="99" type="rgb"/>
+                    </TitledBorder>
+                  </Border>
+                </Property>
+                <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                  <Dimension value="[873, 170]"/>
+                </Property>
+              </Properties>
+
+              <Layout>
+                <DimensionLayout dim="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="1" attributes="0">
+                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Component id="wSearchBirthDateLabel" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                  <Component id="wSearchBirthDateTextField" min="-2" pref="123" max="-2" attributes="0"/>
+                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                  <Component id="wSearchCityLabel" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                  <Component id="wSearchCityTextField" min="-2" pref="150" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="wSearchStreetLabel" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
+                                  <Component id="wSearchStreetTextField" min="-2" pref="150" max="-2" attributes="0"/>
+                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                  <Component id="wSearchBuildingNumberLabel" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="13" max="-2" attributes="0"/>
+                                  <Component id="wSearchBuildingNumberTextField" min="-2" pref="50" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Component id="wSearchIDLabel" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
+                                  <Component id="wSearchIDTextField" min="-2" pref="150" max="-2" attributes="0"/>
+                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                  <Component id="wSearchNameLabel" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="wSearchNameTextField" min="-2" pref="150" max="-2" attributes="0"/>
+                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                  <Component id="wSearchSurnameLabel" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="wSearchSurnameTextField" min="-2" pref="150" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <EmptySpace min="-2" pref="100" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <Group type="103" groupAlignment="1" attributes="0">
+                              <Group type="102" attributes="0">
+                                  <Component id="wSearchPostLabel" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                  <Component id="wSearchPostTextField" min="-2" pref="150" max="-2" attributes="0"/>
+                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                  <Component id="wSearchPhoneLabel" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="wSearchPhoneTextField" min="-2" pref="150" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" attributes="0">
+                                  <Component id="wSearchEmailLabel" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="wSearchEmailTextField" min="-2" pref="150" max="-2" attributes="0"/>
+                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                  <Component id="wSearchDepartmentLabel" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="wSearchDepartmentTextField" min="-2" pref="120" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" attributes="0">
+                                  <Component id="wSearchProfessionLabel" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="wSearchProfessionTextField" min="-2" pref="150" max="-2" attributes="0"/>
+                                  <EmptySpace max="32767" attributes="0"/>
+                              </Group>
+                              <Group type="102" attributes="0">
+                                  <Component id="wSearchBankLabel" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="wSearchBankTextField" min="-2" pref="316" max="-2" attributes="0"/>
+                                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                              </Group>
+                          </Group>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+                <DimensionLayout dim="1">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="wSearchIDLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="wSearchIDTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="wSearchNameLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="wSearchNameTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="wSearchSurnameLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="wSearchSurnameTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="wSearchStreetTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="wSearchBuildingNumberLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="wSearchBuildingNumberTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Group type="103" alignment="3" groupAlignment="3" attributes="0">
+                                  <Component id="wSearchBirthDateLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="wSearchBirthDateTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="wSearchCityLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="wSearchCityTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="wSearchStreetLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="wSearchBankTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Group type="103" alignment="3" groupAlignment="3" attributes="0">
+                                  <Component id="wSearchPostLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="wSearchPostTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="wSearchPhoneLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="wSearchPhoneTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="wSearchBankLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="wSearchEmailLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="wSearchEmailTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="wSearchDepartmentLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="wSearchProfessionLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="wSearchDepartmentTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="wSearchProfessionTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace min="0" pref="3" max="32767" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+              </Layout>
+              <SubComponents>
+                <Component class="javax.swing.JLabel" name="wSearchIDLabel">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="ID:"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="wSearchIDTextField">
+                </Component>
+                <Component class="javax.swing.JLabel" name="wSearchNameLabel">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Name:"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="wSearchNameTextField">
+                </Component>
+                <Component class="javax.swing.JLabel" name="wSearchSurnameLabel">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Surname:"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="wSearchSurnameTextField">
+                </Component>
+                <Component class="javax.swing.JLabel" name="wSearchBirthDateLabel">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Birth date:"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="wSearchCityLabel">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="City:"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="wSearchCityTextField">
+                </Component>
+                <Component class="javax.swing.JLabel" name="wSearchStreetLabel">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Street:"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="wSearchStreetTextField">
+                </Component>
+                <Component class="javax.swing.JLabel" name="wSearchBuildingNumberLabel">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Building:"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="wSearchBuildingNumberTextField">
+                </Component>
+                <Component class="javax.swing.JLabel" name="wSearchPostLabel">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Post:"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="wSearchPostTextField">
+                </Component>
+                <Component class="javax.swing.JLabel" name="wSearchPhoneLabel">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Phone:"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="wSearchPhoneTextField">
+                </Component>
+                <Component class="javax.swing.JLabel" name="wSearchBankLabel">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Bank Account:"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="wSearchBankTextField">
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="wSearchBankTextFieldActionPerformed"/>
+                  </Events>
+                </Component>
+                <Component class="javax.swing.JLabel" name="wSearchEmailLabel">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Email:"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="wSearchEmailTextField">
+                </Component>
+                <Component class="javax.swing.JLabel" name="wSearchDepartmentLabel">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Department:"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="wSearchProfessionLabel">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Profession:"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="wSearchBirthDateTextField">
+                </Component>
+                <Component class="javax.swing.JTextField" name="wSearchDepartmentTextField">
+                </Component>
+                <Component class="javax.swing.JTextField" name="wSearchProfessionTextField">
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="wSearchProfessionTextFieldActionPerformed"/>
+                  </Events>
+                </Component>
+              </SubComponents>
+            </Container>
+            <Component class="javax.swing.JButton" name="workersSearchButton">
+              <Properties>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/images/search.png"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Search"/>
+                <Property name="opaque" type="boolean" value="false"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="workersSearchButtonActionPerformed"/>
+              </Events>
+            </Component>
+            <Container class="javax.swing.JPanel" name="workersRecordPanel">
+              <Properties>
+                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                  <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+                    <TitledBorder title="Records">
+                      <Color PropertyName="color" blue="99" green="99" red="99" type="rgb"/>
+                    </TitledBorder>
+                  </Border>
+                </Property>
+              </Properties>
+
+              <Layout>
+                <DimensionLayout dim="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="workersTableScroll" alignment="0" max="32767" attributes="0"/>
+                  </Group>
+                </DimensionLayout>
+                <DimensionLayout dim="1">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="workersTableScroll" alignment="0" pref="286" max="32767" attributes="0"/>
+                  </Group>
+                </DimensionLayout>
+              </Layout>
+              <SubComponents>
+                <Container class="javax.swing.JScrollPane" name="workersTableScroll">
+                  <AuxValues>
+                    <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+                  </AuxValues>
+
+                  <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+                  <SubComponents>
+                    <Component class="javax.swing.JTable" name="workersTable">
+                      <Properties>
+                        <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
+                          <Table columnCount="4" rowCount="0">
+                            <Column editable="true" title="Title 1" type="java.lang.Object"/>
+                            <Column editable="true" title="Title 2" type="java.lang.Object"/>
+                            <Column editable="true" title="Title 3" type="java.lang.Object"/>
+                            <Column editable="true" title="Title 4" type="java.lang.Object"/>
+                          </Table>
+                        </Property>
+                        <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
+                          <TableColumnModel selectionModel="0">
+                            <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                              <Title/>
+                              <Editor/>
+                              <Renderer/>
+                            </Column>
+                            <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                              <Title/>
+                              <Editor/>
+                              <Renderer/>
+                            </Column>
+                            <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                              <Title/>
+                              <Editor/>
+                              <Renderer/>
+                            </Column>
+                            <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                              <Title/>
+                              <Editor/>
+                              <Renderer/>
+                            </Column>
+                          </TableColumnModel>
+                        </Property>
+                        <Property name="tableHeader" type="javax.swing.table.JTableHeader" editor="org.netbeans.modules.form.editors2.JTableHeaderEditor">
+                          <TableHeader reorderingAllowed="true" resizingAllowed="true"/>
+                        </Property>
+                      </Properties>
+                    </Component>
+                  </SubComponents>
+                </Container>
+              </SubComponents>
+            </Container>
+            <Component class="javax.swing.JButton" name="workersAddButton">
+              <Properties>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/images/add.png"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Add"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="workersAddButtonActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JButton" name="workersUpdateButton">
+              <Properties>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/images/update.png"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Update"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="workersUpdateButtonActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JButton" name="workersRemoveButton">
+              <Properties>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/images/remove.png"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Remove"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="workersRemoveButtonActionPerformed"/>
+              </Events>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Container class="javax.swing.JPanel" name="scheduleTabPanel">
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+              <JTabbedPaneConstraints tabName="Schedule">
+                <Property name="tabTitle" type="java.lang.String" value="Schedule"/>
+              </JTabbedPaneConstraints>
+            </Constraint>
+          </Constraints>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="1" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="scheduleSearchPanel" alignment="0" pref="865" max="32767" attributes="0"/>
+                          <Component id="scheduleRecordPanel" alignment="1" max="32767" attributes="0"/>
+                          <Group type="102" alignment="1" attributes="0">
+                              <EmptySpace min="0" pref="356" max="32767" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="scheduleSearchButton" alignment="1" min="-2" pref="165" max="-2" attributes="0"/>
+                                  <Group type="102" alignment="1" attributes="0">
+                                      <Component id="scheduleAddButton" min="-2" pref="165" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="scheduleUpdateButton" min="-2" pref="165" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="scheduleRemoveButton" min="-2" pref="165" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                          </Group>
+                      </Group>
+                      <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
+                      <Component id="scheduleSeparator" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Component id="scheduleAddPanel" min="-2" pref="320" max="-2" attributes="0"/>
+                      <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="scheduleAddPanel" alignment="1" pref="639" max="32767" attributes="0"/>
+                  <Component id="scheduleSeparator" alignment="1" max="32767" attributes="0"/>
+                  <Group type="102" alignment="0" attributes="0">
+                      <Component id="scheduleSearchPanel" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="scheduleSearchButton" min="-2" pref="43" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="scheduleRecordPanel" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="scheduleRemoveButton" alignment="3" min="-2" pref="43" max="-2" attributes="0"/>
+                          <Component id="scheduleAddButton" alignment="3" min="-2" pref="43" max="-2" attributes="0"/>
+                          <Component id="scheduleUpdateButton" alignment="3" min="-2" pref="43" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace pref="51" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Container class="javax.swing.JPanel" name="scheduleAddPanel">
+              <Properties>
+                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                  <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+                    <TitledBorder title="Add / Update">
+                      <Color PropertyName="color" blue="99" green="99" red="99" type="rgb"/>
+                    </TitledBorder>
+                  </Border>
+                </Property>
+                <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                  <Dimension value="[492, 25]"/>
+                </Property>
+              </Properties>
+
+              <Layout>
+                <DimensionLayout dim="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="1" attributes="0">
+                          <EmptySpace pref="131" max="32767" attributes="0"/>
+                          <Component id="scheduleConfirmButton" min="-2" pref="165" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" attributes="0">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Component id="sAddWorkerIDLabel" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="sAddWorkerIDComboBox" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="sAddToLabel" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace max="32767" attributes="0"/>
+                                      <Component id="sAddToHourComboBox" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="sAddToHLabel" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="sAddSinceLabel" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="9" max="-2" attributes="0"/>
+                                      <Component id="sAddSinceHourComboBox" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="sAddSinceHLabel" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="sAddDayLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="sAddIDLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="sAddIDTextField" min="-2" pref="150" max="-2" attributes="0"/>
+                                      <Component id="sAddDayComboBox" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                          </Group>
+                          <EmptySpace min="0" pref="114" max="32767" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+                <DimensionLayout dim="1">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="1" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="sAddIDLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="sAddIDTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="sAddDayLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="sAddDayComboBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="sAddSinceLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="sAddSinceHLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="sAddSinceHourComboBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="sAddToLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="sAddToHLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="sAddToHourComboBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="sAddWorkerIDLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="sAddWorkerIDComboBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="32767" attributes="0"/>
+                          <Component id="scheduleConfirmButton" min="-2" pref="43" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+              </Layout>
+              <SubComponents>
+                <Component class="javax.swing.JButton" name="scheduleConfirmButton">
+                  <Properties>
+                    <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                      <Image iconType="3" name="/images/confirm.png"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="Confirm"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="scheduleConfirmButtonActionPerformed"/>
+                  </Events>
+                </Component>
+                <Component class="javax.swing.JLabel" name="sAddIDLabel">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="ID:"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="sAddIDTextField">
+                </Component>
+                <Component class="javax.swing.JLabel" name="sAddDayLabel">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Day:"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JComboBox" name="sAddDayComboBox">
+                  <Properties>
+                    <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+                      <StringArray count="7">
+                        <StringItem index="0" value="poniedzialek"/>
+                        <StringItem index="1" value="wtorek"/>
+                        <StringItem index="2" value="sroda"/>
+                        <StringItem index="3" value="czwartek"/>
+                        <StringItem index="4" value="piatek"/>
+                        <StringItem index="5" value="sobota"/>
+                        <StringItem index="6" value="niedziela"/>
+                      </StringArray>
+                    </Property>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JLabel" name="sAddSinceLabel">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Since:"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="sAddSinceHLabel">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="h"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="sAddToLabel">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="To:"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="sAddToHLabel">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="h"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="sAddWorkerIDLabel">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Worker ID:"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JComboBox" name="sAddWorkerIDComboBox">
+                  <Properties>
+                    <Property name="editable" type="boolean" value="true"/>
+                    <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+                      <StringArray count="4">
+                        <StringItem index="0" value="Item 1"/>
+                        <StringItem index="1" value="Item 2"/>
+                        <StringItem index="2" value="Item 3"/>
+                        <StringItem index="3" value="Item 4"/>
+                      </StringArray>
+                    </Property>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JComboBox" name="sAddSinceHourComboBox">
+                  <Properties>
+                    <Property name="editable" type="boolean" value="true"/>
+                    <Property name="maximumRowCount" type="int" value="20"/>
+                    <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+                      <StringArray count="13">
+                        <StringItem index="0" value="8"/>
+                        <StringItem index="1" value="9"/>
+                        <StringItem index="2" value="10"/>
+                        <StringItem index="3" value="11"/>
+                        <StringItem index="4" value="12"/>
+                        <StringItem index="5" value="13"/>
+                        <StringItem index="6" value="14"/>
+                        <StringItem index="7" value="15"/>
+                        <StringItem index="8" value="16"/>
+                        <StringItem index="9" value="17"/>
+                        <StringItem index="10" value="18"/>
+                        <StringItem index="11" value="19"/>
+                        <StringItem index="12" value="20"/>
+                      </StringArray>
+                    </Property>
+                    <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+                      <Color id="Default Cursor"/>
+                    </Property>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JComboBox" name="sAddToHourComboBox">
+                  <Properties>
+                    <Property name="editable" type="boolean" value="true"/>
+                    <Property name="maximumRowCount" type="int" value="20"/>
+                    <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+                      <StringArray count="13">
+                        <StringItem index="0" value="8"/>
+                        <StringItem index="1" value="9"/>
+                        <StringItem index="2" value="10"/>
+                        <StringItem index="3" value="11"/>
+                        <StringItem index="4" value="12"/>
+                        <StringItem index="5" value="13"/>
+                        <StringItem index="6" value="14"/>
+                        <StringItem index="7" value="15"/>
+                        <StringItem index="8" value="16"/>
+                        <StringItem index="9" value="17"/>
+                        <StringItem index="10" value="18"/>
+                        <StringItem index="11" value="19"/>
+                        <StringItem index="12" value="20"/>
+                      </StringArray>
+                    </Property>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+                  </AuxValues>
+                </Component>
+              </SubComponents>
+            </Container>
+            <Component class="javax.swing.JSeparator" name="scheduleSeparator">
+              <Properties>
+                <Property name="orientation" type="int" value="1"/>
+              </Properties>
+            </Component>
+            <Container class="javax.swing.JPanel" name="scheduleSearchPanel">
+              <Properties>
+                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                  <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+                    <TitledBorder title="Search">
+                      <Color PropertyName="color" blue="99" green="99" red="99" type="rgb"/>
+                    </TitledBorder>
+                  </Border>
+                </Property>
+                <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                  <Dimension value="[357, 170]"/>
+                </Property>
+              </Properties>
+
+              <Layout>
+                <DimensionLayout dim="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" attributes="0">
+                                  <Component id="sSearchIDLabel" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                  <Component id="sSearchIDTextField" min="-2" pref="150" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Component id="sSearchWorkerIDLabel" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="sSearchWorkerIDTextField" min="-2" pref="50" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Component id="sSearchDayLabel" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="sSearchDayTextField" min="-2" pref="98" max="-2" attributes="0"/>
+                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                  <Component id="sSearchSinceLabel" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="sSearchSinceHourTextField" min="-2" pref="42" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="8" max="-2" attributes="0"/>
+                                  <Component id="sSearchSinceHLabel" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                  <Component id="sSearchToLabel" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="4" max="-2" attributes="0"/>
+                                  <Component id="sSearchToHourTextField" min="-2" pref="42" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="sSearchToHLabel" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+                <DimensionLayout dim="1">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="sSearchIDLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="sSearchIDTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="sSearchDayLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="sSearchDayTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Group type="103" alignment="3" groupAlignment="3" attributes="0">
+                                  <Component id="sSearchSinceLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="sSearchSinceHLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="sSearchSinceHourTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Group type="103" alignment="3" groupAlignment="3" attributes="0">
+                                      <Component id="sSearchToLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="sSearchToHLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="sSearchToHourTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                          </Group>
+                          <EmptySpace min="-2" pref="13" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="sSearchWorkerIDLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="sSearchWorkerIDTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace min="0" pref="53" max="32767" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+              </Layout>
+              <SubComponents>
+                <Component class="javax.swing.JLabel" name="sSearchIDLabel">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="ID:"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="sSearchIDTextField">
+                </Component>
+                <Component class="javax.swing.JLabel" name="sSearchDayLabel">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Day:"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="sSearchSinceLabel">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Since:"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="sSearchToLabel">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="To:"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="sSearchSinceHLabel">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="h"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="sSearchToHLabel">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="h"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="sSearchWorkerIDLabel">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Worker ID:"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="sSearchSinceHourTextField">
+                </Component>
+                <Component class="javax.swing.JTextField" name="sSearchToHourTextField">
+                </Component>
+                <Component class="javax.swing.JTextField" name="sSearchWorkerIDTextField">
+                </Component>
+                <Component class="javax.swing.JTextField" name="sSearchDayTextField">
+                </Component>
+              </SubComponents>
+            </Container>
+            <Component class="javax.swing.JButton" name="scheduleSearchButton">
+              <Properties>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/images/search.png"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Search"/>
+                <Property name="opaque" type="boolean" value="false"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="scheduleSearchButtonActionPerformed"/>
+              </Events>
+            </Component>
+            <Container class="javax.swing.JPanel" name="scheduleRecordPanel">
+              <Properties>
+                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                  <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+                    <TitledBorder title="Records">
+                      <Color PropertyName="color" blue="99" green="99" red="99" type="rgb"/>
+                    </TitledBorder>
+                  </Border>
+                </Property>
+              </Properties>
+
+              <Layout>
+                <DimensionLayout dim="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="scheduleTableScroll" alignment="0" pref="853" max="32767" attributes="0"/>
+                  </Group>
+                </DimensionLayout>
+                <DimensionLayout dim="1">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="scheduleTableScroll" alignment="0" pref="286" max="32767" attributes="0"/>
+                  </Group>
+                </DimensionLayout>
+              </Layout>
+              <SubComponents>
+                <Container class="javax.swing.JScrollPane" name="scheduleTableScroll">
+                  <AuxValues>
+                    <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+                  </AuxValues>
+
+                  <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+                  <SubComponents>
+                    <Component class="javax.swing.JTable" name="scheduleTable">
+                      <Properties>
+                        <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
+                          <Table columnCount="4" rowCount="0">
+                            <Column editable="true" title="Title 1" type="java.lang.Object"/>
+                            <Column editable="true" title="Title 2" type="java.lang.Object"/>
+                            <Column editable="true" title="Title 3" type="java.lang.Object"/>
+                            <Column editable="true" title="Title 4" type="java.lang.Object"/>
+                          </Table>
+                        </Property>
+                        <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
+                          <TableColumnModel selectionModel="0">
+                            <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                              <Title/>
+                              <Editor/>
+                              <Renderer/>
+                            </Column>
+                            <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                              <Title/>
+                              <Editor/>
+                              <Renderer/>
+                            </Column>
+                            <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                              <Title/>
+                              <Editor/>
+                              <Renderer/>
+                            </Column>
+                            <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                              <Title/>
+                              <Editor/>
+                              <Renderer/>
+                            </Column>
+                          </TableColumnModel>
+                        </Property>
+                        <Property name="tableHeader" type="javax.swing.table.JTableHeader" editor="org.netbeans.modules.form.editors2.JTableHeaderEditor">
+                          <TableHeader reorderingAllowed="true" resizingAllowed="true"/>
+                        </Property>
+                      </Properties>
+                    </Component>
+                  </SubComponents>
+                </Container>
+              </SubComponents>
+            </Container>
+            <Component class="javax.swing.JButton" name="scheduleAddButton">
+              <Properties>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/images/add.png"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Add"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="scheduleAddButtonActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JButton" name="scheduleUpdateButton">
+              <Properties>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/images/update.png"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Update"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="scheduleUpdateButtonActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JButton" name="scheduleRemoveButton">
+              <Properties>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/images/remove.png"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Remove"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="scheduleRemoveButtonActionPerformed"/>
+              </Events>
+            </Component>
+          </SubComponents>
+        </Container>
+      </SubComponents>
+    </Container>
+  </SubComponents>
+</Form>
