@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ULTIMATE TODO LIST</title>
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css"
+          integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47" crossorigin="anonymous">
+</head>
+<body>
+<main style="width: 40%; margin: 0 auto">
+    <div id="welcome" style="text-align: center">
+        <h1>Introduce yourself</h1>
+    </div>
+    <form id="welcomeForm" class="pure-form pure-g pure-form-aligned">
+        <input class="pure-input-rounded pure-u-1" name="name" placeholder="name">
+        <fieldset id="langs" class="pure-u-1 pure-control-group">Loading...</fieldset>
+        <button id="btn" class="pure-button pure-button-primary pure-u-1">Submit</button>
+    </form>
+    <form id="todoForm" class="pure-form" style="display: none; text-align: center">
+        <fieldset>
+            <input id="todoText" class="pure-input-rounded pure-input-2-3" placeholder="new TODO">
+            <button id="addTodo" class="pure-button pure-button-primary">+</button>
+            <div>
+                <label style="float: left;width: 33%; margin: 0" class="pure-checkbox">
+                    <input id="importantRadiobox" type="radio" name="importance" value="important" checked> Important
+                </label>
+                <label style="float: left;width: 33%; margin: 0" class="pure-checkbox">
+                    <input id="todoRadioBox" type="radio" name="importance" value="todo"> To Do
+                </label>
+                <label style="float: left;width: 33%; margin: 0" class="pure-checkbox">
+                    <input id="anytimeRadiobox" type="radio" name="importance" value="anytime"> Anytime
+                </label>
+            </div>
+        </fieldset>
+        <div style="margin-bottom: 20px"></div>
+        <div style="border: 1px solid gray; border-radius: 2px">
+            <span style="color: gray">Click <i class="fa fa-trash"></i> to remove checked</span>
+        </div>
+        <div style="margin-bottom: 20px"></div>
+        <div>
+            <div style="float: left;width: 33%; margin: 0">
+                <span style="font-size: xx-large; ">Important:</span>
+                <button id="trashImportantButton" class="btn"><i class="fa fa-trash"></i></button>
+                <fieldset id="importantColumn"></fieldset>
+            </div>
+            <div style="float: left;width: 33%; margin: 0">
+                <span style="font-size: xx-large; ">To Do:</span>
+                <button id="trashTodoButton" class="btn"><i class="fa fa-trash"></i></button>
+                <fieldset id="todoColumn"></fieldset>
+            </div>
+            <div style="float: left;width: 33%; margin: 0">
+                <span style="font-size: xx-large">Anytime:</span>
+                <button id="trashAnytimeButton" class="btn"><i class="fa fa-trash"></i></button>
+                <fieldset id="anytimeColumn"></fieldset>
+            </div>
+        </div>
+    </form>
+</main>
+<script>
+    (function () {
+        const API_URL = 'http://localhost:8081/api';
+        const IMPORTANTS_API_URL = `${API_URL}/importants`;
+        const TODOS_API_URL = `${API_URL}/todos`;
+        const ANYTIMES_API_URL = `${API_URL}/anytimes`;
+
+        const todoText = document.getElementById('todoText');
+        const todoForm = document.getElementById('todoForm');
+
+        fetch(IMPORTANTS_API_URL)
+            .then(processOkResponse)
+            .then(todos => todos.forEach(createNewImportant));
+        fetch(TODOS_API_URL)
+            .then(processOkResponse)
+            .then(todos => todos.forEach(createNewTodo));
+        fetch(ANYTIMES_API_URL)
+            .then(processOkResponse)
+            .then(todos => todos.forEach(createNewAnytime));
+
+        document.getElementById("trashImportantButton").addEventListener('click', (event) =>{
+            event.preventDefault();
+            fetch(IMPORTANTS_API_URL, {method: 'DELETE'})
+                .then(processOkResponse)
+                .catch(console.warn);
+            const nodeToRemove = document.getElementById("importantColumn");
+            while(nodeToRemove.firstChild){
+                nodeToRemove.removeChild(nodeToRemove.firstChild);
+            }
+            fetch(IMPORTANTS_API_URL)
+                .then(processOkResponse)
+                .then(todos => todos.forEach(createNewImportant));
+
+        });
+        document.getElementById("trashTodoButton").addEventListener('click', (event) =>{
+            event.preventDefault();
+            fetch(TODOS_API_URL, {method: 'DELETE'})
+                .then(processOkResponse)
+                .catch(console.warn);
+            const nodeToRemove = document.getElementById("todoColumn");
+            while(nodeToRemove.firstChild){
+                nodeToRemove.removeChild(nodeToRemove.firstChild);
+            }
+            fetch(TODOS_API_URL)
+                .then(processOkResponse)
+                .then(todos => todos.forEach(createNewTodo));
+
+        });
+        document.getElementById("trashAnytimeButton").addEventListener('click', (event) =>{
+            event.preventDefault();
+            fetch(ANYTIMES_API_URL, {method: 'DELETE'})
+                .then(processOkResponse)
+                .catch(console.warn);
+            const nodeToRemove = document.getElementById("anytimeColumn");
+            while(nodeToRemove.firstChild){
+                nodeToRemove.removeChild(nodeToRemove.firstChild);
+            }
+            fetch(ANYTIMES_API_URL)
+                .then(processOkResponse)
+                .then(todos => todos.forEach(createNewAnytime));
+
+        });
+        document.getElementById('addTodo').addEventListener('click', (event) => {
+            event.preventDefault();
+            if (todoForm.elements.importance.value === 'important') {
+                fetch(IMPORTANTS_API_URL, {
+                    method: 'POST',
+                    headers: {
+                        'Accept': 'application/json',
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({text: todoText.value})
+                })
+                    .then(processOkResponse)
+                    .then(createNewImportant)
+                    .then(() => todoText.value = '')
+                    .catch(console.warn);
+            }
+            if (todoForm.elements.importance.value === 'todo') {
+                fetch(TODOS_API_URL, {
+                    method: 'POST',
+                    headers: {
+                        'Accept': 'application/json',
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({text: todoText.value})
+                })
+                    .then(processOkResponse)
+                    .then(createNewTodo)
+                    .then(() => todoText.value = '')
+                    .catch(console.warn);
+            }
+            if (todoForm.elements.importance.value === 'anytime') {
+                fetch(ANYTIMES_API_URL, {
+                    method: 'POST',
+                    headers: {
+                        'Accept': 'application/json',
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({text: todoText.value})
+                })
+                    .then(processOkResponse)
+                    .then(createNewAnytime)
+                    .then(() => todoText.value = '')
+                    .catch(console.warn);
+            }
+
+
+        });
+
+        function createNewImportant(important) {
+            const label = document.createElement('label');
+            label.classList.add('pure-checkbox');
+            const checkbox = document.createElement('input');
+            checkbox.type = 'checkbox';
+            checkbox.checked = important.done;
+            checkbox.addEventListener('click',
+                (event) => {
+                    event.preventDefault();
+                    fetch(`${IMPORTANTS_API_URL}/${important.id}`, {method: 'PUT'})
+                        .then(processOkResponse)
+                        .then(updatedImportant => checkbox.checked = updatedImportant.done)
+                        .catch(console.warn);
+                });
+            label.appendChild(checkbox);
+            label.appendChild(document.createTextNode(` ${important.text}`));
+            document.getElementById('importantColumn').appendChild(label);
+        }
+
+        function createNewTodo(todo) {
+            const label = document.createElement('label');
+            label.classList.add('pure-checkbox');
+            const checkbox = document.createElement('input');
+            checkbox.type = 'checkbox';
+            checkbox.checked = todo.done;
+            checkbox.addEventListener('click',
+                (event) => {
+                    event.preventDefault();
+                    fetch(`${TODOS_API_URL}/${todo.id}`, {method: 'PUT'})
+                        .then(processOkResponse)
+                        .then(updatedTodo => checkbox.checked = updatedTodo.done)
+                        .catch(console.warn);
+                });
+            label.appendChild(checkbox);
+            label.appendChild(document.createTextNode(` ${todo.text}`));
+            document.getElementById('todoColumn').appendChild(label);
+        }
+
+        function createNewAnytime(anytime) {
+            const label = document.createElement('label');
+            label.classList.add('pure-checkbox');
+            const checkbox = document.createElement('input');
+            checkbox.type = 'checkbox';
+            checkbox.checked = anytime.done;
+            checkbox.addEventListener('click',
+                (event) => {
+                    event.preventDefault();
+                    fetch(`${ANYTIMES_API_URL}/${anytime.id}`, {method: 'PUT'})
+                        .then(processOkResponse)
+                        .then(updatedAnytime => checkbox.checked = updatedAnytime.done)
+                        .catch(console.warn);
+                });
+            label.appendChild(checkbox);
+            label.appendChild(document.createTextNode(` ${anytime.text}`));
+            document.getElementById('anytimeColumn').appendChild(label);
+        }
+
+        initWelcomeForm();
+
+        function initWelcomeForm() {
+            const CODE_TO_EMOJI = {
+                'ENG': '🇬🇧',
+                'POL': '🇵🇱',
+                'GER': '🇩🇪',
+                'ESP': '🇪🇸',
+                'RUS': '🇷🇺'
+            };
+            fetch(`${API_URL}/langs`)
+                .then(processOkResponse)
+                .then(langArr => {
+                    document.getElementById('langs').innerHTML = langArr.map(lang => `
+              <label class="pure-radio">
+                <input type="radio" name="lang" value="${lang.id}">
+                ${CODE_TO_EMOJI[lang.code]}
+              </label>
+          `).join('\n');
+                    initWelcomeFormClick();
+                });
+        }
+
+        function initWelcomeFormClick() {
+            const welcomeForm = document.getElementById('welcomeForm');
+
+            document.getElementById('btn').addEventListener('click', (event) => {
+                event.preventDefault();
+                const formObj = {
+                    name: welcomeForm.elements.name.value,
+                    lang: welcomeForm.elements.lang.value
+                };
+                fetch(`${API_URL}?${new URLSearchParams(formObj)}`)
+                    .then(response => response.text())
+                    .then((text) => {
+                        document.getElementById('welcome').innerHTML = `
+                <h1>${text}</h1>
+            `;
+                        welcomeForm.remove();
+                        document.getElementById('todoForm').style.display = 'block';
+                    });
+            });
+        }
+
+        function processOkResponse(response = {}) {
+            if (response.ok) {
+                return response.json();
+            }
+            throw new Error(`Status not 200 (${response.status})`);
+        }
+    })();
+</script>
+</body>
+</html>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
